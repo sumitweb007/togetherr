@@ -168,8 +168,14 @@ html,body{height:100%;background:var(--bg);color:var(--tx);font-family:var(--fb)
 
 /* RESPONSIVE */
 @media(max-width:640px){
-  .sb{display:none}
-  .orb1,.orb2{width:280px;height:280px}
+  .sb{
+    display:flex;
+    position:absolute;
+    right:0;
+    top:52px;
+    height:calc(100% - 52px);
+    z-index:100;
+  }
 }
 </style>
 </head>
